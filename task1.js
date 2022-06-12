@@ -23,10 +23,7 @@ cekHariKerja("senin")
     });
   })
   .catch((error) => {
-    console.log({
-      message: "Hari ini bukan hari kerja",
-    });
-    console.log(error);
+    console.log(`${error}\nHari ini hari libur`)
   });
 
 // b. try-catch
@@ -38,10 +35,7 @@ async function getHariKerja() {
       data: result,
     });
   } catch (error) {
-    console.log({
-      message: "Hari ini bukan hari kerja",
-    });
-    console.log(error);
+    console.log(`${error}\nHari ini hari libur`);
   } finally {
     console.log("\n" + "Proses selesai...");
   }
