@@ -12,11 +12,13 @@ const getMonth = (callback) => {
       "May", "Juni", "July", "August",
       "September", "October", "November", "Desember",
     ];
+    
+    month.map((data) => {
+      console.log(data)
+    })
 
     if (!error) {
-      callback(null, month.map((item) => {
-        console.log(item)
-      }));
+      callback(null, month);
     } else {
       callback(new Error("Sorry Data Not Found"));
     }
