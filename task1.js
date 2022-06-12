@@ -20,10 +20,13 @@ cekHariKerja("senin")
     console.log({
       message: "Hari ini adalah hari kerja",
       data: data,
-    });
+    })
   })
   .catch((error) => {
     console.log(`${error}\nHari ini hari libur`)
+  })
+  .finally(() => {
+    console.log('\n'+'Proses selesai...')
   });
 
 // b. try-catch
