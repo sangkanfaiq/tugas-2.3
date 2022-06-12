@@ -23,7 +23,7 @@ const cekBarang = (limit) => {
       ];
 
       if (data) {
-        if (data.length < limit) {
+        if (data.length != limit) {
           reject("Barang tidak sesuai");
         } else {
           resolve({
